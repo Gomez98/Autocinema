@@ -1,0 +1,24 @@
+<h3>Crear Empleado</h3>
+<div [hidden]="submitted" style="width: 400px;">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="name">NOMBRES</label>
+            <input type="text" class="form-control" id="nombres" required [(ngModel)]="empleado.nom"
+                name="nombres">
+        </div>
+        <div class="form-group">
+            <label for="name">USUARIO</label>
+            <input type="text" class="form-control" id="usuario" required [(ngModel)]="empleado.usu"
+                name="usuario">
+        </div>
+        <div class="form-group">
+            <label for="name">CONTRASEÑA</label>
+            <input type="text" class="form-control" id="contra" required [(ngModel)]="empleado.con"
+             name="contra">
+        </div>
+        <button type="submit" class="btn btn-success">Registrar</button>
+    </form>
+</div>
+<div [hidden]="!submitted">
+    <h4>Guardado satisfactoriamente!</h4>
+</div>

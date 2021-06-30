@@ -1,0 +1,13 @@
+.table-cont{
+    margin:20px;
+}
+
+.table>thead {
+    color: white;
+    background-color: black; 
+}
+
+.panel-heading{
+    margin: 1rem;
+
+}
